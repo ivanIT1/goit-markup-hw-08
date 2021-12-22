@@ -23,42 +23,77 @@
         <a class="logo header__logo" href="index.html"
           >Web<span class="logo__black">Studio</span></a
         >
-        <nav class="navigate">
-          <ul class="navigate__list">
-            <li class="navitage__item">
-              <a
-                href="index.html"
-                class="navigate__link navigate__link--current"
-                >Студия</a
+        <button
+          class="menu-button js-open-menu"
+          tape="button"
+          aria-expanded="false"
+        >
+          <svg class="menu-icon" width="40" height="40" aria-label="Меню">
+            <use href="./images/icon.svg#menu_mob"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu js-menu-container">
+          <button
+            class="mobile-menu__close js-open-menu is-open"
+            tape="button"
+            aria-expanded="false"
+          >
+            <svg class="menu-icon" width="19" height="19" aria-label="Меню">
+              <use class="menu-close" href="./images/icon.svg#close_mob"></use>
+            </svg>
+          </button>
+          <nav class="navigate">
+            <ul class="navigate__list">
+              <li class="navitage__item">
+                <a
+                  href="index.html"
+                  class="navigate__link navigate__link--current"
+                  >Студия</a
+                >
+              </li>
+
+              <li class="navitage__item">
+                <a href="portfolio.html" class="navigate__link">Портфолио</a>
+              </li>
+              <li class="navitage__item">
+                <a href="#" class="navigate__link">Контакты </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact">
+            <li class="contact__item">
+              <a href="mailto:info@devstudio.com" class="contact__link">
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="./images/icon.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="navitage__item">
-              <a href="portfolio.html" class="navigate__link">Портфолио</a>
-            </li>
-            <li class="navitage__item">
-              <a href="#" class="navigate__link">Контакты </a>
+
+            <li class="contact__item">
+              <a href="tel:+380961111111" class="contact__link"
+                ><svg class="contact__icon" width="10" height="16">
+                  <use href="./images/icon.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="contact">
-          <li class="contact__item">
-            <a href="mailto:info@devstudio.com" class="contact__link">
-              <svg class="contact__icon" width="16" height="12">
-                <use href="./images/icon.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-
-          <li class="contact__item">
-            <a href="tel:+380961111111" class="contact__link"
-              ><svg class="contact__icon" width="10" height="16">
-                <use href="./images/icon.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Instagram</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Twitter</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Facebook</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -176,7 +211,8 @@
               <img
                 class="team__image"
                 src="images/Igor.jpg"
-                width="270"
+                width="450"
+                height="460"
                 alt="Igor"
               />
               <div class="team__meta">
@@ -228,7 +264,8 @@
               <img
                 class="team-image"
                 src="images/olga.jpg"
-                width="270"
+                width="450"
+                height="460"
                 alt="Olga"
               />
               <div class="team__meta">
@@ -276,7 +313,8 @@
               <img
                 class="team__image"
                 src="images/nikolay.jpg"
-                width="270"
+                width="450"
+                height="460"
                 alt="Nikolay"
               />
               <div class="team__meta">
@@ -324,7 +362,8 @@
               <img
                 class="team__image"
                 src="images/mihail.jpg"
-                width="270"
+                width="450"
+                height="460"
                 alt="Mihail"
               />
               <div class="team__meta">
@@ -602,6 +641,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
