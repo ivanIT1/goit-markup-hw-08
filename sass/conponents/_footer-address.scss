@@ -1,6 +1,15 @@
 .address-block {
-  margin-right: 70px;
-  flex-grow: 1;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    flex-grow: 1;
+  }
 }
 .address__list {
   list-style-type: none;
