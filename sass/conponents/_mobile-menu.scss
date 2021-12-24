@@ -1,13 +1,5 @@
-.mobile-menu__close {
-  background-color: transparent;
-  border: transparent;
-  position: absolute;
-  top: 21px;
-  right: 25px;
-  cursor: pointer;
-}
 .menu {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 460px) and (max-width: 767px) {
     display: flex;
     margin-top: 64px;
   }
@@ -26,4 +18,46 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $hover-collor-text;
+}
+.mobile-menu {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 11199px) {
+    margin-left: 83px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+.mobile-menu {
+  &.is-open {
+    max-width: 767px;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: block;
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 48px 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+.mobile-menu__close {
+  position: absolute;
+  top: 21px;
+  right: 23px;
+  border: transparent;
+  background: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
