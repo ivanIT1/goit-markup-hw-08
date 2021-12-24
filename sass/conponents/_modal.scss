@@ -4,10 +4,17 @@
   top: 50%;
   left: 50%;
   padding: 40px;
+
+  width: 528px;
+  height: 581px;
   transition-timing-function: $time-function;
   transition-property: transform;
   transition-duration: $transition-duration;
   transform: translate(-50%, -50%) scale(1);
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    padding: 17px 40px;
+  }
 }
 .modal__title {
   margin-bottom: 12px;
@@ -78,6 +85,10 @@
   color: $description-collor;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.1;
+  }
 }
 .form-policy {
   margin-top: 20px;
@@ -90,7 +101,7 @@
 
 .form-feedback__comment {
   width: auto;
-  height: auto;
+  height: 120px;
   padding: 12px 16px;
   font-weight: 400;
   font-size: 12px;
@@ -174,6 +185,15 @@
   background-color: $title-color;
   border-radius: 50%;
   box-sizing: border-box;
+  color: $basic-coller;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: color $transition-duration $time-function;
+  &:hover,
+  &:focus {
+    color: $button-hover;
+  }
+}
+.modal__icon {
+  fill: currentColor;
 }
