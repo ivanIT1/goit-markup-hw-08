@@ -19,6 +19,10 @@
   letter-spacing: 0.02em;
   color: $hover-collor-text;
 }
+.menu__line {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
 .mobile-menu {
   display: flex;
   flex-grow: 1;
