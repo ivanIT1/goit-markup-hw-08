@@ -588,6 +588,12 @@ summary {
   color: #2196f3;
 }
 
+.menu__line {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .mobile-menu {
   display: -webkit-box;
   display: -ms-flexbox;
