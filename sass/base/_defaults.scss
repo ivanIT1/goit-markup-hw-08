@@ -1,4 +1,10 @@
 /* сброс стилей */
+html,
+body {
+  @media screen and (min-width: 320px) {
+    overflow-x: hidden;
+  }
+}
 ul {
   margin: 0;
   padding: 0;
