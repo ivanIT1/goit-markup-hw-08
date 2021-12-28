@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /* сброс стилей */
+@media screen and (min-width: 320px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
 ul {
   margin: 0;
   padding: 0;
