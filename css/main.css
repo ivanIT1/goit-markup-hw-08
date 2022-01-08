@@ -749,15 +749,8 @@ summary {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .overlay {
-    max-width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .overlay {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/tablet/tablet.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet/tablet.jpg");
   }
@@ -810,7 +803,7 @@ summary {
 
 @media screen and (max-width: 767px) {
   .benefits__item {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
@@ -1096,7 +1089,7 @@ summary {
 }
 
 .client__link {
-  width: 170px;
+  width: auto;
   height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1124,50 +1117,25 @@ summary {
 }
 
 .client__item {
-  margin-right: auto;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 460px) and (max-width: 767px) {
-  .client__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  .client__item:nth-child(2n) {
-    margin-right: 0;
-  }
-  .client__item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }
+  width: calc((100% - 2 * 30px) / 2);
+  height: 90px;
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .client__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  .client__item:nth-child(3n) {
-    margin-right: 0;
-  }
-  .client__item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+    width: calc((100% - 3 * 30px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .client__item:not(:last-child) {
-    margin-right: 30px;
+  .client__item {
+    width: calc((100% - 6 * 30px) / 6);
   }
 }
 
 .client__icon {
   fill: currentColor;
-}
-
-@media screen and (max-width: 767px) {
-  .client__icon {
-    min-width: 460px;
-  }
 }
 
 .footer {
@@ -1362,7 +1330,13 @@ summary {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .subscribe__mail {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe__mail {
     width: 450px;
   }
