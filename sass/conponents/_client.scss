@@ -26,7 +26,9 @@
   }
 }
 .client__item {
-  @media screen and (max-width: 767px) {
+  margin-right: auto;
+  margin-bottom: 30px;
+  @media screen and (min-width: 460px) and (max-width: 767px) {
     margin-right: 30px;
     margin-bottom: 30px;
     &:nth-child(2n) {
@@ -55,4 +57,7 @@
 }
 .client__icon {
   fill: currentColor;
+  @media screen and (max-width: 767px) {
+    min-width: 460px;
+  }
 }
