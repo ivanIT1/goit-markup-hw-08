@@ -804,6 +804,10 @@ summary {
 @media screen and (max-width: 767px) {
   .benefits__item {
     max-width: 450px;
+    margin-bottom: 30px;
+  }
+  .benefits__item:nth-last-child(-n + 1) {
+    margin-bottom: 0;
   }
 }
 
@@ -811,9 +815,13 @@ summary {
   .benefits__item {
     width: 352px;
     margin-right: 30px;
+    margin-bottom: 30px;
   }
   .benefits__item:nth-child(2n) {
-    margin-right: 0px;
+    margin-right: 0;
+  }
+  .benefits__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 }
 
