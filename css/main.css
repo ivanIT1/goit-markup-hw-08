@@ -420,7 +420,7 @@ summary {
   color: #ffffff;
 }
 
-@media screen and (min-width: 460px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .navitage__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -569,7 +569,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 460px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
