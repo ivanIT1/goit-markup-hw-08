@@ -213,13 +213,13 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <picture>
-                <source
+              <picture
+                ><source
                   srcset="
-                    ./images/team/mobile/igor.jpg   1x,
-                    ./images/team/mobile/igor2x.jpg 2x
+                    ./images/team/pc/igor.jpg   1x,
+                    ./images/team/pc/igor2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                   type="image/jpg"
                 />
                 <source
@@ -232,12 +232,13 @@
                 />
                 <source
                   srcset="
-                    ./images/team/pc/igor.jpg   1x,
-                    ./images/team/pc/igor2x.jpg 2x
+                    ./images/team/mobile/igor.jpg   1x,
+                    ./images/team/mobile/igor2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(max-width: 767px)"
                   type="image/jpg"
                 />
+
                 <img
                   class="team__image"
                   src="images/Igor.jpg"
@@ -292,13 +293,13 @@
             </li>
 
             <li class="team__item">
-              <picture>
-                <source
+              <picture
+                ><source
                   srcset="
-                    ./images/team/mobile/olga.jpg   1x,
-                    ./images/team/mobile/olga2x.jpg 2x
+                    ./images/team/pc/olga.jpg   1x,
+                    ./images/team/pc/olga2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                   type="image/jpg"
                 />
                 <source
@@ -311,12 +312,13 @@
                 />
                 <source
                   srcset="
-                    ./images/team/pc/olga.jpg   1x,
-                    ./images/team/pc/olga2x.jpg 2x
+                    ./images/team/mobile/olga.jpg   1x,
+                    ./images/team/mobile/olga2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(max-width: 767px)"
                   type="image/jpg"
                 />
+
                 <img
                   class="team-image"
                   src="images/olga.jpg"
@@ -370,10 +372,10 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/mobile/nikolay.jpg   1x,
-                    ./images/team/mobile/nikolay2x.jpg 2x
+                    ./images/team/pc/nikolay.jpg   1x,
+                    ./images/team/pc/nikolay2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                   type="image/jpg"
                 />
                 <source
@@ -386,12 +388,13 @@
                 />
                 <source
                   srcset="
-                    ./images/team/pc/nikolay.jpg   1x,
-                    ./images/team/pc/nikolay2x.jpg 2x
+                    ./images/team/mobile/nikolay.jpg   1x,
+                    ./images/team/mobile/nikolay2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(max-width: 767px)"
                   type="image/jpg"
                 />
+
                 <img
                   class="team__image"
                   src="images/nikolay.jpg"
@@ -445,12 +448,13 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/mobile/michail.jpg   1x,
-                    ./images/team/mobile/michail2x.jpg 2x
+                    ./images/team/pc/michail.jpg   1x,
+                    ./images/team/pc/michail2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(min-width: 1200px)"
                   type="image/jpg"
                 />
+
                 <source
                   srcset="
                     ./images/team/tablet/michail.jpg   1x,
@@ -461,10 +465,10 @@
                 />
                 <source
                   srcset="
-                    ./images/team/pc/michail.jpg   1x,
-                    ./images/team/pc/michail2x.jpg 2x
+                    ./images/team/mobile/michail.jpg   1x,
+                    ./images/team/mobile/michail2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(max-width: 767px)"
                   type="image/jpg"
                 />
                 <img
@@ -653,7 +657,7 @@
             </label>
             <button class="subscribe__button" type="submit">
               Подписаться
-              <svg width="24" height="24">
+              <svg class="subscribe__icon" width="24" height="24">
                 <use href="images/icon.svg#send"></use>
               </svg>
             </button>
@@ -669,6 +673,7 @@
           </svg>
         </button>
         <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
+
         <form class="form-feedback">
           <div class="form-wrapper">
             <label class="form-feedback__name" for="name"
