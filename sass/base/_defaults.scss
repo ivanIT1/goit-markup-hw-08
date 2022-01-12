@@ -54,3 +54,9 @@ a {
     width: 1200px;
   }
 }
+.container--indent {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
