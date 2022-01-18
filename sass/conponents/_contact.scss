@@ -1,8 +1,8 @@
 .contact {
   margin-left: auto;
   @media screen and (max-width: 767px) {
-    margin-top: 302px;
-
+    margin-top: auto;
+    margin-left: 0;
     display: flex;
     flex-direction: column-reverse;
   }
