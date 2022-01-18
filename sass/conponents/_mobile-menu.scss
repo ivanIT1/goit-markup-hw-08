@@ -27,7 +27,7 @@
   display: flex;
   flex-grow: 1;
   z-index: 1;
-  align-items: center;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -40,18 +40,18 @@
 }
 .mobile-menu {
   &.is-open {
-    max-width: 767px;
+    width: 100%;
     position: fixed;
-
+    bottom: 0;
     top: 0;
     left: 0;
-    right: 0;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     overflow-y: scroll;
-    display: block;
+
     background-color: white;
-    width: auto;
-    height: auto;
+
     padding: 48px 40px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
