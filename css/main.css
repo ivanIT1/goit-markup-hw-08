@@ -510,7 +510,8 @@ summary {
 
 @media screen and (max-width: 767px) {
   .contact {
-    margin-top: 302px;
+    margin-top: auto;
+    margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -650,9 +651,6 @@ summary {
       -ms-flex-positive: 1;
           flex-grow: 1;
   z-index: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -674,16 +672,23 @@ summary {
 }
 
 .mobile-menu.is-open {
-  max-width: 767px;
+  width: 100%;
   position: fixed;
+  bottom: 0;
   top: 0;
   left: 0;
-  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   overflow-y: scroll;
-  display: block;
   background-color: white;
-  width: auto;
-  height: auto;
   padding: 48px 40px;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -1489,7 +1494,7 @@ summary {
   background-color: #ffffff;
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 50%;
   max-width: 450px;
   padding: 40px;
   border-radius: 4px;
@@ -1514,14 +1519,12 @@ summary {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal {
     width: 450px;
-    top: 35%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
-    top: 40%;
   }
 }
 
