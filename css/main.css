@@ -541,7 +541,7 @@ summary {
   text-decoration: none;
   font-size: 34px;
   line-height: 1.17;
-  color: #2196f3;
+  color: #757575;
   -webkit-transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
@@ -556,6 +556,12 @@ summary {
 
 .contact__link:hover, .contact__link:focus {
   color: #2196f3;
+}
+
+@media screen and (max-width) {
+  .contact__link {
+    color: #2196f3;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -594,6 +600,12 @@ summary {
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: #757575;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact__link-hover {
+    color: #2196f3;
   }
 }
 
@@ -991,6 +1003,13 @@ summary {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section__title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
@@ -1200,7 +1219,7 @@ summary {
 
 @media screen and (min-width: 1200px) {
   .client__item {
-    width: calc((100% - 6 * 30px) / 6);
+    width: calc((100% - 5 * 30px) / 6);
   }
   .client__item:not(:last-child) {
     margin-right: 30px;
@@ -1749,7 +1768,6 @@ summary {
 
 @media screen and (max-width: 767px) {
   .filters {
-    width: 450px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-bottom: 40px;
