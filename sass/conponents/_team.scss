@@ -9,6 +9,10 @@
   text-align: center;
   color: $basic-coller;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
