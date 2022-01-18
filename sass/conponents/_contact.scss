@@ -25,10 +25,13 @@
   font-size: 34px;
   line-height: 1.17;
 
-  color: $hover-collor-text;
+  color: $description-collor;
   transition: color $time-function $transition-duration;
   &:hover,
   &:focus {
+    color: $hover-collor-text;
+  }
+  @media screen and (max-width) {
     color: $hover-collor-text;
   }
 
@@ -62,5 +65,10 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: $description-collor;
+  }
+}
+.contact__link-hover {
+  @media screen and (max-width: 767px) {
+    color: $hover-collor-text;
   }
 }
