@@ -2,7 +2,7 @@
   background-color: $title-color;
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 50%;
   max-width: 450px;
   padding: 40px;
   border-radius: 4px;
@@ -15,11 +15,9 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
-    top: 35%;
   }
   @media screen and (min-width: 1200px) {
     max-width: 528px;
-    top: 40%;
   }
 }
 .modal__title {
